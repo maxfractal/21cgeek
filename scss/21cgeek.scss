@@ -1,11 +1,16 @@
+@import 'comic';
+
 /*------------ 21cGeek ------------ */
+.episode_Title {}
+
+
 .podcard {
 	border: solid #A9A9A9 .5px;
-	/* background-color: #A9A9A9;  */
+	background-color: #A9A9A9;  
 	color: white;
-	max-height: 364px;
+	/* max-height: 364px;
 	min-width: 230px;
-	max-width: 235px;
+	max-width: 235px; */
 }
 
 
