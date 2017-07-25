@@ -2,5 +2,8 @@
 /adsf/
 /podscape/
 /js/tether/
-js/tether.js
+/bower_components
+.idea
+.sass-cache
+
 

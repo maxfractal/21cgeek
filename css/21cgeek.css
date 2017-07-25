@@ -1,8 +1,8 @@
 .pod1 {
   /* background: url(../podscape/comics/2008-08-05/2008-08-05_sliced_all_01.gif);*/
   display: block;
-  height: 364px;
-  width: 225px;
+  /*height:364px;
+  width:225px; */
   background-position: center;
   background-repeat: no-repeat; }
 
@@ -13,7 +13,11 @@
 .card {
   /* max-width:235px; */ }
 
+/* ------------ Base App Colors ----------------------*/
 /*------------ 21cGeek ------------ */
+body {
+  background-color: #yellow; }
+
 .podcard {
   border: solid #A9A9A9 .5px;
   background-color: #A9A9A9;
