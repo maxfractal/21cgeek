@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,wDAAwD;ACIxD,IAAK;EACH,gBAAgB,EDHR,OAAO",
+"sources": ["../scss/_color.scss","../scss/base.scss"],
+"names": [],
+"file": "base.css"
+}
