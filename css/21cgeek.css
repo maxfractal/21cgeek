@@ -1,3 +1,5 @@
+/* ------------ Comic ----------------------*/
+/* line 2, ../scss/_comic.scss */
 .pod1 {
   /* background: url(../podscape/comics/2008-08-05/2008-08-05_sliced_all_01.gif);*/
   display: block;
@@ -7,47 +9,60 @@
   background-position: center;
   background-repeat: no-repeat; }
 
+/* line 12, ../scss/_comic.scss */
 .pod2 {
   background-color: #488ae4; }
 
+/* line 17, ../scss/_comic.scss */
 .pod3 {
   background-color: #badf30; }
 
+/* line 22, ../scss/_comic.scss */
 .pod4 {
   background-color: #5530df; }
 
+/* line 27, ../scss/_comic.scss */
 .title_Box {
   color: #99ccff;
   background-color: #1f2021; }
 
+/* line 32, ../scss/_comic.scss */
 .episode_Title {
   font-family: monospace;
   font-size: .9em; }
 
+/* ------------ Cards ----------------------*/
+/* line 3, ../scss/_cards.scss */
 .card {
   /* max-width:235px; */ }
 
 /* moved this to cards to clean up 21cgeek scss */
+/* line 8, ../scss/_cards.scss */
 .podcard {
   border: solid #A9A9A9 .5px;
-  background-color: #A9A9A9;
+  /*background-color: #A9A9A9;*/
+  background-color: lawngreen;
   color: white;
   /* max-height: 364px;
   min-width: 230px;
   max-width: 235px; */ }
 
-/* ------------ Base App Colors ----------------------*/
-/* ------------ Base App Colors ----------------------*/
+/* ------------ Base App Colors 21c----------------------*/
+/* ------------ Base ----------------------*/
+/* ------------ Base App Colors 21c----------------------*/
+/* line 8, ../scss/_base.scss */
 body {
   background-color: #FFE600; }
 
 /*------------ 21cGeek ------------ */
+/* line 8, ../scss/21cgeek.scss */
 .mobile {
   margin-left: 0;
   margin-right: 0;
   padding-left: 0;
   padding-right: 0;
   margin-top: 1em; }
+  /* line 15, ../scss/21cgeek.scss */
   .mobile .col-sm-12 {
     padding-left: 0;
     padding-right: 0;
@@ -63,6 +78,7 @@ body {
 /* ----------- iPad mini ----------- */
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  /* line 67, ../scss/21cgeek.scss */
   .tablet {
     margin-left: 15px;
     margin-right: 15px; } }

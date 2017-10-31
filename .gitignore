@@ -3,6 +3,8 @@
 /podscape/
 /js/tether/
 /bower_components
+/node_modules
+/css
 .idea
 .sass-cache
 
