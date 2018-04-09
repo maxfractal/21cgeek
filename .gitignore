@@ -1,8 +1,11 @@
 /nbproject/
 /adsf/
 /podscape/
+/js/
 /js/tether/
-/bower_components
+/bower_components/
+/node_modules/
+/css/
 .idea
 .sass-cache
 
