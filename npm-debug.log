@@ -1,0 +1,63 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'rebuild', 'node-sass', '--force' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 warn using --force I sure hope you know what you are doing.
+5 info readInstalled object
+6 verbose rebuild path, id [ '/Applications/XAMPP/xamppfiles/htdocs/21cgeek/node_modules/node-sass',
+6 verbose rebuild   'node-sass@4.5.3' ]
+7 silly rebuild set [ '/Applications/XAMPP/xamppfiles/htdocs/21cgeek/node_modules/node-sass' ]
+8 info build /Applications/XAMPP/xamppfiles/htdocs/21cgeek/node_modules/node-sass
+9 info preinstall node-sass@4.5.3
+10 verbose linkStuff [ false,
+10 verbose linkStuff   false,
+10 verbose linkStuff   false,
+10 verbose linkStuff   '/Applications/XAMPP/xamppfiles/htdocs/21cgeek/node_modules' ]
+11 info linkStuff node-sass@4.5.3
+12 verbose linkBins node-sass@4.5.3
+13 verbose link bins [ { 'node-sass': 'bin/node-sass' },
+13 verbose link bins   '/Applications/XAMPP/xamppfiles/htdocs/21cgeek/node_modules/.bin',
+13 verbose link bins   false ]
+14 verbose linkMans node-sass@4.5.3
+15 verbose rebuildBundles node-sass@4.5.3
+16 verbose rebuildBundles [ '.bin',
+16 verbose rebuildBundles   'async-foreach',
+16 verbose rebuildBundles   'chalk',
+16 verbose rebuildBundles   'cross-spawn',
+16 verbose rebuildBundles   'gaze',
+16 verbose rebuildBundles   'get-stdin',
+16 verbose rebuildBundles   'glob',
+16 verbose rebuildBundles   'in-publish',
+16 verbose rebuildBundles   'lodash.assign',
+16 verbose rebuildBundles   'lodash.clonedeep',
+16 verbose rebuildBundles   'lodash.mergewith',
+16 verbose rebuildBundles   'meow',
+16 verbose rebuildBundles   'mkdirp',
+16 verbose rebuildBundles   'nan',
+16 verbose rebuildBundles   'node-gyp',
+16 verbose rebuildBundles   'npmlog',
+16 verbose rebuildBundles   'request',
+16 verbose rebuildBundles   'sass-graph',
+16 verbose rebuildBundles   'stdout-stream' ]
+17 silly gentlyRm /Applications/XAMPP/xamppfiles/htdocs/21cgeek/node_modules/.bin/node-sass is being purged
+18 verbose gentlyRm don't care about contents; nuking /Applications/XAMPP/xamppfiles/htdocs/21cgeek/node_modules/.bin/node-sass
+19 silly vacuum-fs purging /Applications/XAMPP/xamppfiles/htdocs/21cgeek/node_modules/.bin/node-sass
+20 silly vacuum-fs quitting because other entries in /Applications/XAMPP/xamppfiles/htdocs/21cgeek/node_modules/.bin
+21 verbose stack Error: EPERM, chmod '/Applications/XAMPP/xamppfiles/htdocs/21cgeek/node_modules/node-sass/bin/node-sass'
+21 verbose stack     at Error (native)
+22 verbose cwd /Applications/XAMPP/xamppfiles/htdocs/21cgeek
+23 error Darwin 17.4.0
+24 error argv "node" "/usr/local/bin/npm" "rebuild" "node-sass" "--force"
+25 error node v0.12.2
+26 error npm  v2.7.4
+27 error path /Applications/XAMPP/xamppfiles/htdocs/21cgeek/node_modules/node-sass/bin/node-sass
+28 error code EPERM
+29 error errno -1
+30 error Error: EPERM, chmod '/Applications/XAMPP/xamppfiles/htdocs/21cgeek/node_modules/node-sass/bin/node-sass'
+30 error     at Error (native)
+30 error  { [Error: EPERM, chmod '/Applications/XAMPP/xamppfiles/htdocs/21cgeek/node_modules/node-sass/bin/node-sass']
+30 error   errno: -1,
+30 error   code: 'EPERM',
+30 error   path: '/Applications/XAMPP/xamppfiles/htdocs/21cgeek/node_modules/node-sass/bin/node-sass' }
+31 error Please try running this command again as root/Administrator.
+32 verbose exit [ -1, true ]
