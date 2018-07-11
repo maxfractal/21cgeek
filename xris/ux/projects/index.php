@@ -11,8 +11,11 @@
     echo 'This is a PHP test.';
     echo 'ISLT Enhanced';
     ?>
+    <p>Cogstate</p>
     <p><a href="case_studies/wireframes/ISLT/index.html">ISLT Enhanced</a></p>
+    <p>eTouches</p>
     <p><a href="case_studies/wireframes/etouches/eselect/index.html">eSelect Demo</a></p>
+    <p>USA Today</p>
 </div>
 </body>
 </html>
