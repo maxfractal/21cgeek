@@ -1,4 +1,16 @@
 
+.comic {
+	display: inline-flex;
+	border: solid .5px #000;
+	border-radius: 1%;
+	padding: 1em .5em;
+}
+
+.panel {
+	padding-right: 1.3em;
+}
+
+
 .pod1 {
 	/* background: url(../podscape/comics/2008-08-05/2008-08-05_sliced_all_01.gif);*/
 	display:block;
