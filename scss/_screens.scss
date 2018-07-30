@@ -1,0 +1,29 @@
+/*********** Screens ***************/
+@media only screen and (max-width: 320px) {
+    .panel {
+        width:100%;
+        display: inline-flex;
+        background-color: #445566;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .panel {
+        color: #E80074;
+    }
+}
+
+@media only screen 
+    and (max-width: 480px)
+        and (min-width: 426px) 
+    {
+        .panel {
+            width:100%;
+            display: inline-flex;
+            /* background-color: lightblue; */
+        }
+        .comicTitle {
+            color:#7400FF;
+        
+        } 
+    }
