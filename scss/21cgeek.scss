@@ -3,15 +3,11 @@
 @import 'color';
 @import 'base';
 @import 'screens';
+@import 'type';
 @import 'ux';
 
 /*------------ 21cGeek ------------ */
-//body
-body {
-  color: $textBlk;
-  background-color: $bkgrndGry;
-  padding-bottom: 50px;
-}
+
 
 
 .mobile {
