@@ -5,8 +5,14 @@
 @import 'screens';
 @import 'ux';
 
-<<<<<<< HEAD
 /*------------ 21cGeek ------------ */
+//body
+body {
+  color: $textBlk;
+  background-color: $bkgrndGry;
+  padding-bottom: 50px;
+}
+
 
 .mobile {
   margin-left: 0;
@@ -162,6 +168,4 @@
   and (-webkit-min-device-pixel-ratio: 2) {
 
 }
-=======
 /*------------ 21cGeek ------------ */
->>>>>>> respComic2

@@ -14,3 +14,21 @@
   min-width: 230px;
   max-width: 235px; */
 }
+
+.uxp_card {
+  position: relative;
+  background: #FFF;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+article .uxp_intro {
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.uxphr {
+  margin-left: -25px;
+  margin-right: -25px;
+}
