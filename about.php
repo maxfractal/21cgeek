@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>.:.:::Semiotica v.4:::.:.:.</title>
+<title>About</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <meta name="keywords" content="Copyright 2003-2018 Chris Parsell All rights reserved">
 <meta name="keywords" content="UX. UI, Product Development, Podscape, RIA, web development, comic, video, web comic, illustration, Xris Parsell, Chris Parsell, actionscript, flex programming">
@@ -62,51 +62,11 @@
 </div>
 </nav>
 <!-- End header -->
-<!-- comic section -->
-<div class="container-fluid">
-<div class="row">
-	<div class="col-md-3"><h2>21cGeek</h2></div>
-</div>
-<div class="row">    
-<div class="col-md-3 col-sm-6 col-xs-12">
-	<div class="panel panel-default podcard">
-		<div class="panel-header"></div>
-		<div class="panel-body pod1"><img class="center-block" src="podscape/comics/2008-08-05/2008-08-05_sliced_all_01.gif" alt="Frame 1"/></div>
-		<!--<div class="panel-footer"></div>-->
-	</div>
-</div>  
-<div class="col-md-3 col-sm-6 col-xs-12">
-	<div class="panel panel-default podcard">
-		<div class="panel-header"></div>
-		<div class="panel-body"><img class="center-block" src="podscape/comics/2008-08-05/2008-08-05_sliced_all_02.gif" width="214" height="364" alt=""/></div>
-		<!--<div class="panel-footer"></div>-->
-	</div>
-</div>  
-<div class="col-md-3 col-sm-6 col-xs-12">
-	<div class="panel panel-default podcard">
-		<div class="panel-header"></div>
-		<div class="panel-body"><img class="center-block" src="podscape/comics/2008-08-05/2008-08-05_sliced_all_04.gif" width="215" height="364" alt=""/></div>
-		<!--<div class="panel-footer"></div>-->
-	</div>
-</div>
-<div class="col-md-3 col-sm-6 col-xs-12">
-	<div class="panel panel-default podcard">
-		<div class="panel-header"></div>
-		<div class="panel-body"><img class="center-block" src="podscape/comics/2008-08-05/2008-08-05_sliced_all_05.gif" width="217" height="364" alt=""/></div>
-		<!--<div class="panel-footer"></div>-->
-	</div>
-</div>      
-</div>
-</div>
 
-	<!-- Case studies section -->
-<div>
-	<div><a href="xris/ux/">Case Studies</a></div>
-</div>
-	<!-- Portfolio section -->
-<div>
-	<div>Portfolio</div>
-</div>
+<h2>About</h2>
+<!--About section -->
+<h4>Xris's Origin Story</h4>
+<!-- -->
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>	
 <script src="js/tether.js"></script>
