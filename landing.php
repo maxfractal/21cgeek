@@ -1,6 +1,8 @@
 <?php 
 		//define('WP_USE_THEMES', true);
 		require( dirname( __FILE__ ) . '/21cgeek/wp-blog-header.php' );
+                
+                include 'includes/includes.php';
 ?>
 <!doctype html>
 <html>
@@ -11,6 +13,12 @@
 </head>
 
 <body>
+    <section>
+        <?php echo site_url('/xris'); ?><br>
+        <?php echo $home; ?><br>
+        <?php echo $xCSS ?><br>
+        <?php echo $xris ?>
+    </section>
 	<section>
 	<article>
 		<a href="21cgeek/index.php"><h1><?php echo(bloginfo('name')); ?></h1></a>

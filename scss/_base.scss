@@ -1,19 +1,9 @@
-<<<<<<< HEAD
-/* ------------ Base ----------------------*/
-
-@import 'color';
-
-$yellow: #ffff00;
-
-
-body {
-  /* background-color: $yolk; */
-	background-color: #F9F9F3;
-
-=======
-
 /************** BASE ******************/
+//body
 body {
-    background-color: #FEFEFE;
->>>>>>> respComic2
-}
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    color: $textBlk;
+    background-color: $bkgrndGry;
+    padding-bottom: 50px;
+  }
