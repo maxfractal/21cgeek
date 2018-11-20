@@ -18,3 +18,32 @@ $cogOrange:#FA4616;
 $gry2:#DBE3E8;
 $gry3:#EDF0F2;
 $gry4:#A7B7C2;
+
+
+grad1{ 
+    border-radius: 20px;
+    width: 70%;
+    height: 400px;
+    margin:  50 auto;
+    background: repeating-linear-gradient(
+      45deg,
+      yellow 0px,
+      black 40px,
+      yellow 40px,
+      black 80px
+    );
+  }
+
+  grad2{ 
+    border-radius: 20px;
+    width: 70%;
+    height: 400px;
+    margin:  50 auto;
+    background: repeating-linear-gradient(
+      45deg,
+      yellow 0px,
+      black 40px,
+      black 40px,
+      yellow 80px
+    );
+  }
