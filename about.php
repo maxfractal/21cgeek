@@ -67,6 +67,8 @@
 <!--About section -->
 <h4>Xris's Origin Story</h4>
 <!-- -->
+<button name="HOME" id="default_Button">HOME</button>
+
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>	
 <script src="js/tether.js"></script>
