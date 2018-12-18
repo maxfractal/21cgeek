@@ -1,5 +1,6 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,38 +8,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <style>
-        .boxbg {
-        background: linear-gradient(to right, #9BFFFF, #D4FFFF);
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            border: 0;
         }
-        .light-blue {
-	background: linear-gradient(to right, #9BFFFF, #D4FFFF);
-  }
-  
-  .blue {
-	background: linear-gradient(to right, #99BEFF, #D4FFFF);
-  }
-  
-  .green {
-	background: linear-gradient(to right, #99FFCC, #D4FFFF);
-  }
 
-  .card {
-      width: 175px;
-      height: 200px;
-      border: solid 1px #000;
-      position: relative;
-      display: inline-block;
-      padding: 8px;
-      margin: 8px;
-      border-radius: 4px;
-  }
+        .boxbg {
+            background: linear-gradient(to right, #9BFFFF, #D4FFFF);
+        }
+
+        .light-blue {
+            background: linear-gradient(to right, #9BFFFF, #D4FFFF);
+        }
+
+        .blue {
+            background: linear-gradient(to right, #99BEFF, #D4FFFF);
+        }
+
+        .green {
+            background: linear-gradient(to right, #99FFCC, #D4FFFF);
+        }
+
+        .card {
+            /* 175 - padding/border */
+            width: 159px;
+            height: 200px;
+            border: solid 1px rgba(0, 0, 0, .1);
+            position: relative;
+            display: inline-block;
+            padding: 8px;
+            /* 8px - card border */
+            margin: 20px 7px 7px 0;
+            border-radius: 4px;
+        }
+
+        .card:hover {
+            transform: scaleX(1.1) scaleY(1.1);
+            box-shadow: #EFEFEF;
+        }
     </style>
     <script src="main.js"></script>
 </head>
+
 <body class="boxbg">
     <div class="card green">Card 1</div>
     <div class="card blue">Card 2</div>
     <div class="card light-blue">Card 3</div>
-    
+
 </body>
+
 </html>
