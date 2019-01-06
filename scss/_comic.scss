@@ -63,3 +63,10 @@
     font-family: monospace;
     font-size: .9em;
 }
+
+/* testing out responsive images */
+img {
+	max-width: 100%;
+	display: block;
+	height: auto;
+}
