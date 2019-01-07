@@ -6,6 +6,7 @@ body {
     color: $textBlk;
     background-color: $bkgrndGry;
     padding-bottom: 50px;
+    letter-spacing: 1px;
   }
 
   .landingPage {
@@ -67,4 +68,17 @@ body {
 
   .titleMessage .heading .sub {
     font-size: 23px;
+  }
+/* about section */
+  .section {
+    padding: 100px 0;
+  }
+
+  .aboutImage {
+    max-width: 100%;
+  }
+
+  .skillsSection {
+    color: #f5f6fa;
+    background-color: #ff3838;
   }
