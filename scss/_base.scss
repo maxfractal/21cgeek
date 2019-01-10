@@ -53,23 +53,20 @@ body {
     z-index: 5;
     text-align: center;
     margin-top: -125px;
+    .heading p {
+      color: #F9F9F9;
+      text-shadow: 0 2px 3px rgba(0,0,0,0.4);
+      font-weight: 100;
+      letter-spacing: 7px;
+    }
+    .heading .main {
+      font-size: 50px;
+    }
+    .heading .sub {
+      font-size: 23px;
+    }
   }
-
-  .titleMessage .heading p {
-    color: #F9F9F9;
-    text-shadow: 0 2px 3px rgba(0,0,0,0.4);
-    font-weight: 100;
-    letter-spacing: 7px;
-  }
-
-  .titleMessage .heading .main {
-    font-size: 50px;
-  }
-
-  .titleMessage .heading .sub {
-    font-size: 23px;
-  }
-/* about section */
+  /* about section */
   .section {
     padding: 100px 0;
   }
@@ -81,4 +78,41 @@ body {
   .skillsSection {
     color: #f5f6fa;
     background-color: #ff3838;
+    /*clip-path:polygon(0 50%, 100% 25%, 100% 90%, 0% 100%);*/
+    -webkit-clip-path: polygon(0 0%, 100% 20%, 101% 81%, -2% 110%);
+    clip-path: polygon(0 0%, 100% 20%, 101% 81%, -2% 110%);
   }
+
+  .skill {
+    border: 1px solid #FFF;
+    text-align: center;
+    margin-left: 10px;
+  }
+
+  .chart {
+    position: relative;
+    width: 152px;
+    height: 152px;
+    display: inline-block;
+    /*margin-left: 25px;*/
+    text-align: center;
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .percent {
+      color: #000;
+      line-height: 152px;
+      font-size: 36px;
+      font-weight: bolder;
+      display: inline-block;
+    }
+    .percent:after {
+      content:'%';
+    }
+    &--first {
+      background-color: adjust-hue($color: #38ffa2, $degrees: 30)
+    }
+  }
+

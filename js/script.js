@@ -2,12 +2,12 @@ $(document).ready(function() {
     //jquery load
     $('#slides').superslides({
         animation: 'fade',
-        play: 2780,
+        play: 2950,
         pagination: false
     });
     //vanilla js call
     var typed = new Typed(".typed", {
-        strings: ["UX Architect ^2780","Product Designer ^2780","UX Strategy ^2780","Prototyping ^3000","UI Design ^3000","User Experience ^3000","Product Management ^3000"],
+        strings: ["UX Architect ^3000","Product Designer ^2950","UX Strategy ^2950","Prototyping ^2950","UI Design ^2950","User Experience ^2950","Product Management ^2950"],
         typeSpeed: 30,
         loop: true,
         startDelay: 3000,
@@ -48,10 +48,28 @@ $(document).ready(function() {
             }
         }
     });
-    //easy pie chart
-    $('.chart').easyPieChart({
-        //your options goes here
-    });
-    
+
+
+    var skillsTopOffset = $(".skillsSection").offset().top;
+    /* console.log(skillsTopOffset); */
+
+    $(window).scroll(function() {
+        console.log(window.pageYOffset);
+
+        if (window.pageYOffset > skillsTopOffset - $(window).height() + 300) {
+            //easy pie chart
+            $('.chart').easyPieChart({
+                easing: 'easeInOut',
+                barColor: '#fff',
+                trackColor: '#b90d0d',
+                scaleColor: false,
+                lineWidth: 10,
+                onStep: function(from, to, percent) {
+                    $(this.el).find('.percent').text(Math.round(percent));
+                }
+            });
+
+        };
+    })
 });
 
