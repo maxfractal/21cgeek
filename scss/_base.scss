@@ -117,6 +117,22 @@ body {
   }
 
   //stats section
+.statssection {
+  background-color: #ff3838;
+  -webkit-clip-path: polygon(43% 61%, 75% 44%, 100% 30%, 100% 92%, 65% 96%, 39% 95%, 0 95%, 0% 30%);
+  clip-path: polygon(43% 61%, 75% 44%, 100% 30%, 100% 92%, 65% 96%, 39% 95%, 0 95%, 0% 30%);
+}
+
+/*Alt version darker red
+
+.statssection {
+  background-color: #8c2a20;
+  -webkit-clip-path: polygon(43% 61%, 75% 44%, 100% 30%, 100% 92%, 65% 96%, 39% 95%, 0 95%, 0% 30%);
+  clip-path: polygon(35% 29%, 75% 10%, 100% 30%, 100% 92%, 65% 96%, 39% 95%, 0 95%, 0% 29%);
+}
+
+ */
+
 .squareItem {
   margin-top: 30px;
   position: relative;
@@ -172,6 +188,13 @@ body {
       font-size: 68px;
       margin-left: -20%;
       color: #444;
+      .fas {
+        color: #FF3838;
+      }
+    }
+
+    .squareIcon:hover {
+      transform: translateY(-20px);
     }
 
     .squareContent {
