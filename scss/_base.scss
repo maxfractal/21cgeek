@@ -75,12 +75,14 @@ body {
     max-width: 100%;
   }
 
-  .skillsSection {
+  .skillsSection,
+  .contactSection {
     color: #f5f6fa;
     background-color: #ff3838;
-    /*clip-path:polygon(0 50%, 100% 25%, 100% 90%, 0% 100%);*/
+   /*
     -webkit-clip-path: polygon(0 0%, 100% 20%, 101% 81%, -2% 110%);
     clip-path: polygon(0 0%, 100% 20%, 101% 81%, -2% 110%);
+    */
   }
 
   .skill {
@@ -117,10 +119,11 @@ body {
   }
 
   //stats section
-.statssection {
+.statssection { /*
   background-color: #ff3838;
   -webkit-clip-path: polygon(43% 61%, 75% 44%, 100% 30%, 100% 92%, 65% 96%, 39% 95%, 0 95%, 0% 30%);
   clip-path: polygon(43% 61%, 75% 44%, 100% 30%, 100% 92%, 65% 96%, 39% 95%, 0 95%, 0% 30%);
+  */
 }
 
 /*Alt version darker red
@@ -204,4 +207,38 @@ body {
   }
 }
 
+.contactButton {
+  color: white;
+  padding: 15px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  a {
+    display: block;
+  }
+}
 
+.contactButton:hover {
+  text-decoration: none;
+  color: #e74c3c;
+  background-color: #fff;
+}
+
+.filter a {
+  color: #bdc3c7;
+  border: 1px solid #bdc3c7;
+  padding: 10px;
+  display: block;
+}
+
+.filter li {
+display: inline-block;
+padding:5px;
+}
+
+.filter current {
+background-color: #e74c3c;
+border-color: #e74c3c;
+color: #fff;
+}
