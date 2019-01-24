@@ -55,7 +55,7 @@ $(document).ready(function() {
     var countUpFinished = false;
 
     $(window).scroll(function() {
-        console.log(window.pageYOffset);
+        /* console.log(window.pageYOffset); */
 
         if (window.pageYOffset > skillsTopOffset - $(window).height() + 300) {
             //easy pie chart
