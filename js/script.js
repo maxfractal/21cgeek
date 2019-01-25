@@ -92,5 +92,7 @@ $(document).ready(function() {
         element.countup(endVal);
     })
     */
+
+    $("data-fancybox").fancybox();
 });
 
