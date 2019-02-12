@@ -41,6 +41,12 @@
   background-color: red;
   position: relative;
   display: inline-block;
+
+  -webkit-transition: all 0.1s linear .1s;
+  -moz-transition: all 0.1s linear .1s;
+  -o-transition: all 0.1s linear .1s;
+  -ms-transition: all 0.1s linear .1s;
+  -transition: all 0.1s linear .1s;
 }
 
 .items .imageOverlay {
@@ -51,6 +57,7 @@
   left: 0;
   top: 0;
   opacity: 0;
+  
   -webkit-transition: all 0.2s linear .1s;
   -moz-transition: all 0.2s linear .1s;
   -o-transition: all 0.2s linear .1s;
@@ -79,6 +86,4 @@
 .item:hover .projectLink {
   right: 0;
 }
-/*
-*/
-/*# sourceMappingURL=items.css.map */
+
