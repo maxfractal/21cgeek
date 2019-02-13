@@ -2,7 +2,6 @@
 /nbproject/
 /adsf/
 /podscape/
-/js/
 /js/tether/
 /bower_components/
 /node_modules/
@@ -10,5 +9,6 @@
 /21cgeek/
 .idea
 .sass-cache
+_notes/dwsync.xml
 
 
