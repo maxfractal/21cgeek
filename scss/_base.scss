@@ -257,9 +257,12 @@ color: #fff;
    text-align: center;
    width:100%;
  }
-/******* Copyright **********/
+/******* Footer **********/
 .copyrightSection {
   background-color: #000;
   color: #fff;
   padding: 30px 5px;
+  p {
+    margin: 0;
+  }
 }
