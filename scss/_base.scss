@@ -17,6 +17,34 @@ body {
     //margin-top: 6em;
   }
 
+  /*    Header */
+  #navigation {
+    background-color: #e74c3c;
+    padding: 20px 10px;
+    width:100%;
+    z-index: 100;
+    li {
+      padding: 0 10px;
+      a {
+        color:#FFF;
+      }
+    }
+    .navbar-brand,
+    .navbar-brand:hover {
+      color: #fff;
+    }
+  }
+
+  .navbar-toggler-icon {
+    background: url('../assets/img/menu-filled-50.png');
+    background-size: 100%;
+  }
+
+  .fixedNav #navigation {
+    position: fixed;
+    top: 0;
+  }
+
   .blogBox {
     width: 100%;
     height: 92%;
