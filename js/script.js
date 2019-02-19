@@ -121,6 +121,10 @@ $(document).ready(function() {
         return false;
     });
 
+    $("navigation li a").click(function(e) {
+        e.preventDefault();
+    });
+
     const nav = $("#navigation");
     const navTop = nav.offset().top;
     console.log("navTop = " + navTop);
