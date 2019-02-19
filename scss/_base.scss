@@ -19,10 +19,11 @@ body {
 
   /*    Header */
   #navigation {
-    background-color: #e74c3c;
+    background-color: ##FF3838;
     padding: 20px 10px;
     width:100%;
     z-index: 100;
+    transition: background-color 0.4s;
     li {
       padding: 0 10px;
       a {
@@ -43,6 +44,7 @@ body {
   .fixedNav #navigation {
     position: fixed;
     top: 0;
+    background-color: rgba(255,56,56,.55);
   }
 
   .blogBox {
