@@ -83,16 +83,6 @@ $(document).ready(function() {
         }
     })
 
-    //standalone
-    /*
-    $(".counter").each(function() {
-        var element = $(this);
-        var endVal = parseInt(element.text());
-
-        element.countup(endVal);
-    })
-    */
-
     $("data-fancybox").fancybox();
 
     $(".items").isotope({
@@ -121,8 +111,12 @@ $(document).ready(function() {
         return false;
     });
 
-    $("navigation li a").click(function(e) {
+    $("#navigation li a").click(function(e) {
         e.preventDefault();
+
+        var targetElement = $(this).attr("href");
+        var targetPosition = $(targetElement).offset().top;
+        $("html, body").animate({scrollTop: targetPosition - 50}, "slow");
     });
 
     const nav = $("#navigation");
