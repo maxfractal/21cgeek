@@ -7,10 +7,10 @@ $(document).ready(function() {
     });
     //vanilla js call
     var typed = new Typed(".typed", {
-        strings: ["UX Architect ^3000","Product Designer ^2950","UX Strategy ^2950","Prototyping ^2950","UI Design ^2950","User Experience ^2950","Product Management ^2950"],
+        strings: ["UX Architect ^3000","Product Designer ^2950","UX Strategy ^2950","CSS3 Animation ^2000","Prototyping ^2950","UI Design ^2950","User Experience ^2950","Product Management ^2950"],
         typeSpeed: 30,
         loop: true,
-        startDelay: 3000,
+        startDelay: 2000,
         smartBackspace: true,
         showCursor: false
     });
