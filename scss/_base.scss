@@ -37,11 +37,6 @@ body {
     }
   }
 
-  .logo {
-    height: 38px;
-    width:auto;	
-  }
-
   .navbar-toggler-icon {
     background: url('../assets/img/menu-filled-50.png');
     background-size: 100%;
@@ -134,10 +129,9 @@ body {
 
   .chart {
     position: relative;
-    width: 152px;
+    width: 112px;
     height: 152px;
     display: inline-block;
-    /*margin-left: 25px;*/
     text-align: center;
     canvas {
       position: absolute;

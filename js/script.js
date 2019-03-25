@@ -65,6 +65,7 @@ $(document).ready(function() {
                 trackColor: '#b90d0d',
                 scaleColor: false,
                 lineWidth: 10,
+                lineCap: 'butt',
                 onStep: function(from, to, percent) {
                     $(this.el).find('.percent').text(Math.round(percent));
                 }
