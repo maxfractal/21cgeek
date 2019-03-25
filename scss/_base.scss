@@ -33,7 +33,13 @@ body {
     .navbar-brand,
     .navbar-brand:hover {
       color: #fff;
+      width: 3em;
     }
+  }
+
+  .logo {
+    height: 38px;
+    width:auto;	
   }
 
   .navbar-toggler-icon {
