@@ -5,11 +5,45 @@
         display: inline-flex;
         background-color: #445566;
     }
+    .titleMessage .heading {
+        .main {
+            font-size: 1.8em;
+        }
+        .sub {
+            font-size: 1.1em;
+        }
+    }
+    .slides-navigation a.prev {
+        left: -5.71em;
+    }
+    .slides-navigation a.next {
+        right: -5.71em;
+    }
+    .owl-theme .owl-dots .owl-dot {
+        display: none;
+        zoom: 1;
+    }
+    //override for OWL library
+    .owl-theme .owl-nav [class*=owl-]:hover {
+        background: white;
+        color: #030303;
+        text-decoration: none;
+    }
 }
 
 @media only screen and (max-width: 425px) {
     .panel {
         color: #E80074;
+    }
+    .slides-navigation a.prev {
+        left: -5.71em;
+    }
+    .slides-navigation a.next {
+        right: -5.71em;
+    }
+    .owl-theme .owl-dots .owl-dot {
+        display: none;
+        zoom: 1;
     }
 }
 

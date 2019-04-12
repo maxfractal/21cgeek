@@ -73,11 +73,11 @@ body {
   }
 
   .slides-navigation a.prev {
-    left: 20px;
+    left: 1.42em;
   }
 
   .slides-navigation a.next {
-    right: 20px;
+    right: 1.42em;
   }
 
   .titleMessage {
@@ -95,10 +95,10 @@ body {
       letter-spacing: 7px;
     }
     .heading .main {
-      font-size: 50px;
+      font-size: 2.5em;
     }
     .heading .sub {
-      font-size: 23px;
+      font-size: 1.6em;
     }
   }
   /* about section */
@@ -135,7 +135,7 @@ body {
     text-align: center;
     canvas {
       position: absolute;
-      top: 0;
+      top: 1.57em;
       left: 0;
     }
     .percent {
