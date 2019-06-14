@@ -1,17 +1,24 @@
-body {
-    background-color: white;
+* {
+    margin:0;
+    padding:0;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
-header, footer {
-    color:blue;
-    background-color: #f8f8f8;
+html {
+    background-color: #e6e6e6;
 }
 
-.button {
-
-
-}
-
-p {
-    
+#quiz {
+    background-color: #001a33;
+    position: relative;
+    height: auto;
+    width: 960px;
+    margin: 30px auto;
 }
