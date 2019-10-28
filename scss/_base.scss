@@ -1,176 +1,152 @@
 /************** BASE ******************/
 //body
 body {
-    /* font-family: 'Nunito', sans-serif; */
-    font-family: 'Raleway', sans-serif;
-    color: $textBlk;
-    background-color: $bkgrndGry;
-    /*
+  font-family: Arial, Helvetica, sans-serif;
+  color: $textBlk;
+  background-color: $bkgrndGry;
+  /*
     this was here for the bootstrap navbar
     trying it without the navbar
     padding-bottom: 50px;
     */
-    letter-spacing: 1px;
-  }
+  letter-spacing: 1px;
+}
 
-  .landingPage {
-    //margin-top: 6em;
-  }
-
-  /*    Header */
-  #navigation {
-    background-color: #FF3838;
-    padding: 20px 10px;
-    width:100%;
-    z-index: 100;
-    transition: background-color 0.4s;
-    li {
-      padding: 0 10px;
-      a {
-        color:#FFF;
-      }
-    }
-    .navbar-brand,
-    .navbar-brand:hover {
-      color: #fff;
-      width: 3em;
-    }
-  }
-
-  .navbar-toggler-icon {
-    background: url('../assets/img/menu-filled-50.png');
-    background-size: 100%;
-  }
-
-  .fixedNav #navigation {
-    position: fixed;
-    top: 0;
-    background-color: rgba(255,56,56,.55);
-  }
-
-  .blogBox {
-    width: 100%;
-    height: 92%;
-    background: linear-gradient(blue, 10%,rgba(241,236,241,0.5));
-  }
-
-  .overlay {
-    width: 100%;
-    height:100%;
-    position: absolute;
-    z-index: 3;
-    background-color: rgba($color: #000, $alpha: .4)
-  }
-
-  .slides-navigation {
-    z-index: 6;
-  }
-
-  .slides-navigation .prev,
-  .slides-navigation .next {
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .slides-navigation a.prev {
-    left: 1.42em;
-  }
-
-  .slides-navigation a.next {
-    right: 1.42em;
-  }
-
-  .titleMessage {
-    position: absolute;
-    width: 100%;
-    height: 250px;
-    top: 50%;
-    z-index: 5;
-    text-align: center;
-    margin-top: -125px;
-    .heading p {
-      color: #F9F9F9;
-      text-shadow: 0 2px 3px rgba(0,0,0,0.4);
-      font-weight: 100;
-      letter-spacing: 7px;
-    }
-    .heading .main {
-      font-size: 2.5em;
-    }
-    .heading .sub {
-      font-size: 1.6em;
-    }
-  }
-  /* about section */
-  .section {
-    padding: 100px 0;
-  }
-
-  .aboutImage {
-    max-width: 100%;
-  }
-
-  .skillsSection,
-  .contactSection {
-    color: #f5f6fa;
-    background-color: #ff3838;
-   /*
-    -webkit-clip-path: polygon(0 0%, 100% 20%, 101% 81%, -2% 110%);
-    clip-path: polygon(0 0%, 100% 20%, 101% 81%, -2% 110%);
-    */
-  }
-
-  .skill {
-    border: 1px solid #FFF;
-    text-align: center;
-    margin-left: 10px;
-    height: 14em;
-  }
-
-  .chart {
-    position: relative;
-    width: 112px;
-    height: 152px;
-    display: inline-block;
-    text-align: center;
-    canvas {
-      position: absolute;
-      top: 1.57em;
-      left: 0;
-    }
-    .percent {
-      color: #000;
-      line-height: 152px;
-      font-size: 36px;
-      font-weight: bolder;
-      display: inline-block;
-    }
-    .percent:after {
-      content:'%';
-    }
-    &--first {
-      background-color: adjust-hue(#38ffa2,125deg);
-    }
-  }
-
-  //stats section
-.statssection { /*
+/*    Header */
+#navigation {
   background-color: #ff3838;
-  -webkit-clip-path: polygon(43% 61%, 75% 44%, 100% 30%, 100% 92%, 65% 96%, 39% 95%, 0 95%, 0% 30%);
-  clip-path: polygon(43% 61%, 75% 44%, 100% 30%, 100% 92%, 65% 96%, 39% 95%, 0 95%, 0% 30%);
-  */
+  padding: 20px 10px;
+  width: 100%;
+  z-index: 100;
+  transition: background-color 0.4s;
+  li {
+    padding: 0 10px;
+    a {
+      color: #fff;
+    }
+  }
+  .navbar-brand,
+  .navbar-brand:hover {
+    color: #fff;
+    width: 3em;
+  }
 }
 
-/*Alt version darker red
-
-.statssection {
-  background-color: #8c2a20;
-  -webkit-clip-path: polygon(43% 61%, 75% 44%, 100% 30%, 100% 92%, 65% 96%, 39% 95%, 0 95%, 0% 30%);
-  clip-path: polygon(35% 29%, 75% 10%, 100% 30%, 100% 92%, 65% 96%, 39% 95%, 0 95%, 0% 29%);
+.navbar-toggler-icon {
+  background: url("../assets/img/menu-filled-50.png");
+  background-size: 100%;
 }
 
- */
+.fixedNav #navigation {
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 56, 56, 0.55);
+}
 
+.blogBox {
+  width: 100%;
+  height: 92%;
+  background: linear-gradient(blue, 10%, rgba(241, 236, 241, 0.5));
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  background-color: rgba($color: #000, $alpha: 0.4);
+}
+
+.slides-navigation {
+  z-index: 6;
+}
+
+.slides-navigation .prev,
+.slides-navigation .next {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slides-navigation a.prev {
+  left: 1.42em;
+}
+
+.slides-navigation a.next {
+  right: 1.42em;
+}
+
+.titleMessage {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  top: 50%;
+  z-index: 5;
+  text-align: center;
+  margin-top: -125px;
+  .heading p {
+    color: #f9f9f9;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+    font-weight: 100;
+    letter-spacing: 7px;
+  }
+  .heading .main {
+    font-size: 2.5em;
+    font-weight: bolder;
+  }
+  .heading .sub {
+    font-size: 1.6em;
+    color: $textGry;
+  }
+}
+/* about section */
+.section {
+  padding: 100px 0;
+}
+
+.aboutImage {
+  max-width: 100%;
+}
+
+.skillsSection,
+.contactSection {
+  color: #f5f6fa;
+  background-color: #ff3838;
+}
+
+.skill {
+  border: 1px solid #fff;
+  text-align: center;
+  margin-left: 10px;
+  height: 14em;
+}
+
+.chart {
+  position: relative;
+  width: 112px;
+  height: 152px;
+  display: inline-block;
+  text-align: center;
+  canvas {
+    position: absolute;
+    top: 1.57em;
+    left: 0;
+  }
+  .percent {
+    color: #000;
+    line-height: 152px;
+    font-size: 36px;
+    font-weight: bolder;
+    display: inline-block;
+  }
+  .percent:after {
+    content: "%";
+  }
+  &--first {
+    background-color: adjust-hue(#38ffa2, 125deg);
+  }
+}
+
+//stats section
 .squareItem {
   margin-top: 30px;
   position: relative;
@@ -186,10 +162,10 @@ body {
 
 .squareItemContainer:before,
 .squareItemContainer:after {
-  content:'';
-  position:absolute;
-  top:0;
-  width:30%;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 30%;
   border-bottom: 2px solid #444;
 }
 .squareItemContainer:before {
@@ -203,20 +179,18 @@ body {
 .squareContent h2 {
   font-size: 56px;
   margin-bottom: 10px;
-  font-weight:bolder;
-  color:#ff3838;
+  font-weight: bolder;
+  color: #ff3838;
 }
 
 .squareContent h3 {
-  font-size:13px;
+  font-size: 13px;
   font-weight: 600;
-  margin:0;
+  margin: 0;
 }
-
 
 .squareItem {
   .squareItemContainer {
-
     .squareIcon {
       position: absolute;
       left: 50%;
@@ -227,7 +201,7 @@ body {
       margin-left: -20%;
       color: #444;
       .fas {
-        color: #FF3838;
+        color: #ff3838;
       }
     }
 
@@ -238,7 +212,6 @@ body {
     .squareContent {
       //dummey2
     }
-
   }
 }
 
@@ -268,14 +241,14 @@ body {
 }
 
 .filter li {
-display: inline-block;
-padding:5px;
+  display: inline-block;
+  padding: 5px;
 }
 
 .filter .current {
-background-color: #e74c3c;
-border-color: #e74c3c;
-color: #fff;
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+  color: #fff;
 }
 
 .section .heading {
@@ -284,10 +257,10 @@ color: #fff;
   width: 100%;
 }
 
- .filter {
-   text-align: center;
-   width:100%;
- }
+.filter {
+  text-align: center;
+  width: 100%;
+}
 /******* Footer **********/
 .copyrightSection {
   background-color: #000;
