@@ -7,8 +7,8 @@
     <a href="../../../../../index.html">Home</a>
     <a href="../../index.html">Case Studies home</a>
     <?php
-        echo "Previous Study"
-    
+        echo "Previous Study";
+        echo "<h1>Battery Designer</h1>";
     ?>
   </body>
 </html>
