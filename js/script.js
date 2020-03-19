@@ -1,139 +1,161 @@
 $(document).ready(function() {
-    //jquery load
-    $('#slides').superslides({
-        animation: 'fade',
-        play: 2950,
-        pagination: false
-    });
-    //vanilla js call
-    var typed = new Typed(".typed", {
-        strings: ["UX Architect ^2000","Product Designer ^2950","UX Strategy ^2000","CSS3 Animation ^2000","Gamification ^2000","UI Design ^2000","User Experience ^3950","Product Management ^3950"],
-        typeSpeed: 30,
-        loop: true,
-        startDelay: 2000,
-        smartBackspace: true,
-        showCursor: false
-    });
-    //owl carousel jquery
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1,
-                nav:true
-            },
-            568:{
-                items:2,
-                nav:true
-            },
-            600:{
-                items:3,
-                nav:false
-            },
-            768:{
-                items:3,
-                nav:false
-            },
-            1000:{
-                items:5,
-                nav:true,
-                loop:false
-            },
-            1024:{
-                items:5,
-                nav:true,
-                loop:false
-            }
+  //jquery load
+  $("#slides").superslides({
+    animation: "fade",
+    play: 2950,
+    pagination: false
+  });
+  //vanilla js call
+  var typed = new Typed(".typed", {
+    strings: [
+      "UX Architect ^2000",
+      "Product Designer ^2950",
+      "UX Strategy ^2000",
+      "CSS3 Animation ^2000",
+      "Gamification ^2000",
+      "UI Design ^2000",
+      "User Experience ^3950",
+      "Product Management ^3950"
+    ],
+    typeSpeed: 30,
+    loop: true,
+    startDelay: 2000,
+    smartBackspace: true,
+    showCursor: false
+  });
+  //owl carousel jquery
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true
+      },
+      568: {
+        items: 2,
+        nav: true
+      },
+      600: {
+        items: 3,
+        nav: false
+      },
+      768: {
+        items: 3,
+        nav: false
+      },
+      1000: {
+        items: 5,
+        nav: true,
+        loop: false
+      },
+      1024: {
+        items: 5,
+        nav: true,
+        loop: false
+      }
+    }
+  });
+
+  var skillsTopOffset = $(".skillsSection").offset().top;
+  var statsTopOffset = $(".statsSection").offset().top;
+  var countUpFinished = false;
+
+  $(window).scroll(function() {
+    /* console.log(window.pageYOffset); */
+
+    if (window.pageYOffset > skillsTopOffset - $(window).height() + 300) {
+      //easy pie chart
+      $(".chart").easyPieChart({
+        easing: "easeInOut",
+        barColor: "#fff",
+        trackColor: "#b90d0d",
+        scaleColor: false,
+        lineWidth: 10,
+        lineCap: "butt",
+        onStep: function(from, to, percent) {
+          $(this.el)
+            .find(".percent")
+            .text(Math.round(percent));
         }
+      });
+    }
+
+    if (
+      !countUpFinished &&
+      window.pageYOffset > statsTopOffset - $(window).height() + 300
+    ) {
+      $(".counter").each(function() {
+        var element = $(this);
+        var endVal = parseInt(element.text());
+
+        element.countup(endVal);
+      });
+      countUpFinished = true;
+    }
+  });
+
+  $("data-fancybox").fancybox();
+
+  $(".items").isotope({
+    filter: "*",
+    animationOptions: {
+      duration: 1500,
+      easing: "linear",
+      queue: false
+    }
+  });
+
+  //imagesLoaded function
+  //var $items = $(".items").isotope({});
+
+  $("items")
+    .isotope.imageLoaded()
+    .progress(function() {
+      $("items").isotope("layout");
     });
 
+  //end imagesLoaded
 
-    var skillsTopOffset = $(".skillsSection").offset().top;
-    var statsTopOffset = $(".statsSection").offset().top; 
-    var countUpFinished = false;
+  $("#filters a").click(function() {
+    $("#filters .current").removeClass("current");
+    $(this).addClass("current");
 
-    $(window).scroll(function() {
-        /* console.log(window.pageYOffset); */
-
-        if (window.pageYOffset > skillsTopOffset - $(window).height() + 300) {
-            //easy pie chart
-            $('.chart').easyPieChart({
-                easing: 'easeInOut',
-                barColor: '#fff',
-                trackColor: '#b90d0d',
-                scaleColor: false,
-                lineWidth: 10,
-                lineCap: 'butt',
-                onStep: function(from, to, percent) {
-                    $(this.el).find('.percent').text(Math.round(percent));
-                }
-            });
-            
-        };
-
-        if (!countUpFinished && window.pageYOffset > statsTopOffset - $(window).height() + 300) {
-            $(".counter").each(function() {
-                var element = $(this);
-                var endVal = parseInt(element.text());
-        
-                element.countup(endVal);
-            })
-            countUpFinished = true;
-        }
-    })
-
-    $("data-fancybox").fancybox();
+    var selector = $(this).attr("data-filter");
 
     $(".items").isotope({
-        filter: '*',
-        animationOptions: {
-            duration: 1500,
-            easing: 'linear',
-            queue: false
-        }
+      filter: selector,
+      animationOptions: {
+        duration: 1500,
+        easing: "linear",
+        queue: false
+      }
     });
+    return false;
+  });
 
-    $("#filters a").click(function() {
-        $("#filters .current").removeClass("current");
-        $(this).addClass("current");
+  $("#navigation li a").click(function(e) {
+    e.preventDefault();
 
-        var selector = $(this).attr("data-filter");
+    var targetElement = $(this).attr("href");
+    var targetPosition = $(targetElement).offset().top;
+    $("html, body").animate({ scrollTop: targetPosition - 50 }, "slow");
+  });
 
-        $(".items").isotope({
-            filter: selector,
-            animationOptions: {
-                duration: 1500,
-                easing: 'linear',
-                queue: false
-            }
-        });
-        return false;
-    });
+  const nav = $("#navigation");
+  const navTop = nav.offset().top;
+  console.log("navTop = " + navTop);
 
-    $("#navigation li a").click(function(e) {
-        e.preventDefault();
+  $(window).on("scroll", stickyNavigation);
 
-        var targetElement = $(this).attr("href");
-        var targetPosition = $(targetElement).offset().top;
-        $("html, body").animate({scrollTop: targetPosition - 50}, "slow");
-    });
+  function stickyNavigation() {
+    var body = $("body");
 
-    const nav = $("#navigation");
-    const navTop = nav.offset().top;
-    console.log("navTop = " + navTop);
-
-    $(window).on("scroll", stickyNavigation);
-
-    function stickyNavigation() {
-        var body = $("body");
-
-        if ($(window).scrollTop() >= navTop) {
-            body.addClass("fixedNav");
-        } else {
-            body.removeClass("fixedNav");
-        }
+    if ($(window).scrollTop() >= navTop) {
+      body.addClass("fixedNav");
+    } else {
+      body.removeClass("fixedNav");
     }
+  }
 });
-
